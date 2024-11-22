@@ -48,7 +48,7 @@ class QuickSortTest {
     @Test
     void testSortArrayWithLargeNumbers() {
         Integer[] input = {100000, 999999, 500000};
-        Integer[] expected = {500000, 999999, 1000000};
+        Integer[] expected = {100000, 500000, 999999};
         assertArrayEquals(expected, QuickSort.sort(QuickSort.PIVOT_TYPE.RANDOM, input));
     }
 }
